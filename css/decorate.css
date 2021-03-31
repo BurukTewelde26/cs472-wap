@@ -1,0 +1,43 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+*{
+    box-sizing: border-box;
+}
+.main-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header, .footer{
+    background-color:blue;
+    height:15%;
+  }
+  .content {
+    flex: 1;
+    overflow: scroll;
+    background: white;
+  }
+
+ul{
+    text-align: right;
+}
+#list li, #verifiers li {
+    display: inline;
+    border: 2px solid gray;
+    margin-right: 1em;
+    list-style-type: none;
+    }
+   
+
+  h1,h2{
+      text-align:center;
+  }
+  p{
+      text-align: center;
+      font-size: 1em;
+  }
+    
+
+

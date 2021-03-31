@@ -3,14 +3,16 @@
 	<head>
 		<title>Apply for a Capital One Card</title>
 		<meta charset="utf-8" />
-		<link href="../css/webform1.css" type="text/css" rel="stylesheet" />
+        <link href="../css/webform1.css" type="text/css" rel="stylesheet" />
 		<link href="images/icon.png" type="image/gif" rel="icon" />
+        
+        
 	</head>
 
 	<body>
 
         <div class = "wrapper">
-            <form action="http://google.com/search" id = "frm" method = "GET" >
+            <form action="http://google.com/search" id = "frm" method = "GET" onsubmit="onConsole()">
                 <div class = "main-fields">
             
                   
@@ -22,7 +24,7 @@
                     <input type="text" id ="pass-word" name="pasword" pattern="(?=\d+)(?=[a-z]*)(?=[A-Z]*).{10,}" title="please insert atleast 10 characters and one lower or upper case letter " placeholder="Password" class = "inputbox"> <br>
 
                    <br> <label for="url">URL</label>
-                    <input type="text" id = "url" name = "url" pattern = "((http|https)://)(www.)? [a-zA-Z0-9@:%._\\+~#?&//=] {2,256}\\.[a-z] {2,6}\\b([-a-zA-Z0-9@:% ._\\+~#?&//=]*" placeholder = "Enter URL"  title = "Enter valid URL http// or https//" class = "inputbox"> <br>
+                    <input type="text" id = "url" name = "url" pattern = "https?://.+" placeholder = "Enter URL"  title = "Enter valid URL http// or https//" class = "inputbox"> <br>
                 
                     
                     <input type="checkbox" name="Checkout" id = "checkbox-input">Check Me Out <br>
@@ -32,6 +34,18 @@
                 </div>
         </form>
         </div>
-     
+        <script type="text/javascript">
+            function onConsole(){
+                
+                let newLine = "\r\n"
+                let email= "Email Address :" + document.getElementById('email').value ;
+                let psword = "Password : " +  document.getElementById('pass-word').value;
+                let url ="URL : " +  document.getElementById('url').value ;
+                let chkBox = "Check Out : " +  document.getElementById('checkbox-input').value;
+                    document.write(email + newLine + psword + newLine + 
+                          url + newLine + chkBox + newLine);
+            }
+            </script>
+        
     </body>
 </html>

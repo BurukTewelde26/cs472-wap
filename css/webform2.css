@@ -37,6 +37,7 @@ label{
   .wrapper{
       width:80%;
       margin:5% auto;
+   
   }
   .form-header{
     display:flex;
@@ -47,17 +48,22 @@ label{
       display:flex;
       border-radius:25px;
       padding: 1.9em;
+     
   }
   .left-content{
       flex:1;
       order:1;
       padding:15px;
       margin-right:2em;
+      overflow: auto;
   }
   .right-content{
     flex:1;
     order:2;
     padding:15px;
+    overflow: auto;
+    
+
 }
 input{
     width:100%;

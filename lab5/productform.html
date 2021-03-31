@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Apply for a Capital One Card</title>
+		<meta charset="utf-8" />
+		<link href="../css/webform2.css" type="text/css" rel="stylesheet" />
+		<link href="images/icon.png" type="image/gif" rel="icon" />
+
+        <script type="text/javascript">
+            function display(){
+                
+                let newLine = "\r\n"
+                let prodNum = "Product Number :" +  document.getElementById('prodNum').value 
+                let name = "Name :"  +  document.getElementById('name').value 
+                let unitprice = "Unit Price :"  +  document.getElementById('uprice').value
+                let qty= "quantity In Stock :" + document.getElementById('qty').value ;
+                let supplier = "Supplier  : " +  document.getElementById('supplier').value;
+                let dateofSupply ="Date of Supply : " +  document.getElementById('date-supplied').value ;
+                
+                    alert("Form Entry" + newLine + prodNum + newLine + name + newLine + 
+                          unitprice + newLine + newLine +  qty + newLine + 
+                          supplier + newLine +  dateofSupply );
+            }
+            </script>
+	</head>
+
+	<body>
+
+        <ul class = "nav" id ="nav-bar">
+            <li><h3>MUM Golden Dom Market :: SRM System</h3></li>
+            <li> <h3>Product</h3></li>
+            <li> <h3>Supplier</h3></li>
+            <li id = "icon"><p alighn = "right">Hello! <button type = "submit">Sign Out</button></p> </li>
+            
+        
+            </ul>
+
+      
+
+         <br>
+         
+          <div class = "wrapper">
+              <div class = "form-header">
+                  <h1>New Product Form</h1>
+              </div>
+            <form action="#" class = form-area>
+                
+                <div class = "left-content">
+            
+                     <label for="">Product Number</label>
+                     <input type="text" id = "prodNum" placeholder="product Number">
+            
+            
+                    <label for="">Name</label>
+                    <input type="text"  id = "name" name = "name">
+
+                    <label for="">Unit Price</label>
+                    <input type="text" id = "uprice" name = "unitprice" placeholder = "0.0">
+                </div>
+
+                <div class = "right-content">
+            
+                    <label for="">Quantity In Stock</label>
+                    <input type="text" id = "qty" name = "quantity" placeholder = "0">
+           
+           
+                   <label for="">Supplier</label>
+                   <input type="text" id = "supplier" name ="supplier" placeholder = "select supplier">
+
+                   <label for="">Date Supplied</label>
+                   <input type="text" id = "date-supplied" name = "datesupplied" placeholder = "yyyy-mm-dd"> <br>
+
+                   <button type = "reset" >Reset</button>
+                   <button type = "cancel" id = "cancel">Cancel</button>
+                   <button type = "submit" onclick="display()">Add Product</button>
+               </div>
+        
+        
+        
+        </form>
+        </div>
+        
+        
+        </body>
+
+ </html>
+
