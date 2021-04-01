@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../css/minibank.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div class = "main-container">
+        <div class = "header" >
+            <ul id = "list" class = "icons">
+                <li><h1>CS472::</h1></li>
+                <li id = "sp"><span>--</span></li>
+                <li></li>
+            </ul>
+        </div><!--header-->
+     <div class = "content">
+        <div><h1>Bank Account Form</h1> </div>
+        <form action = "#" method = "GET">
+        
+        <div><label for = "acc-no">Account No</label>
+        <input type = "text" name = "accNo" placeholder = "01-XXX-XXXX" pattern = "01-[0-9]{3}-[0-9]{4}" title = "Envalid Format">
+          </div>
+        <div><label for = "customer-name">Customer Name</label>
+         <input type = "text" name = "cust" placeholder = "Name"></div>
+         <div><label for = "Account-Type">Type Of Account</label>
+         <select name="Account-Type" id ="selc" >
+             <option>Saving</option>
+             <option>Checking</option>
+             <option>Retirement</option>
+             </select>
+         </div> <br>
+             <div>
+             <input type = "submit" value = "Create New Account " id = "sub"> </div>
+      </form>
+     </div> <!--content-->
+
+</body>
+</html>
+
+
+    

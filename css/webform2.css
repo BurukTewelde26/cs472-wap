@@ -48,6 +48,7 @@ label{
       display:flex;
       border-radius:25px;
       padding: 1.9em;
+      overflow: scroll;
      
   }
   .left-content{

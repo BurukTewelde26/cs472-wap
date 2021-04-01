@@ -1,0 +1,47 @@
+body{
+    margin:0;
+    
+}
+*{
+    box-sizing: border-box;
+}
+
+.main-container{
+height: 100%;
+
+}
+.header{
+    background-color:black;
+    height:15%;
+  }
+
+
+  .content {
+      width:60%;
+      margin-left:auto;
+      margin-right: auto;
+    display:flex;
+    flex-direction: column;
+    overflow: auto;
+    background: white;
+  }
+
+h1{
+    text-align: left;
+    color: white;
+}
+span{
+    text-align: right;
+    color:white;
+}
+input,select{
+    width:100%;
+    padding:1em;
+    margin-bottom:2em;
+}
+#selc,#sub{
+    background-color: blue;
+}
+#sp{
+    text-align: right;
+}
