@@ -5,42 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        div {
- border: 1px solid;
-}
-#a {
- height: 350px;
- width:1000px;
- border-color: pink;
-}
-.floaty {
- float: right;
- width: 50px;
- height: 50px;
- border-color: red;
-}
-#c {
- clear: right;
- position: relative;
- height: 100px;
- border-color: green;
-}
-#d {
- position: relative;
- bottom: 0px;
- left: 0px;
- width: 50px;
- height: 100px;
-}
-    </style>
 </head>
 <body>
-    <div id=”a”>A
-        <div class=”floaty” id=”b”>C</div>
-        <div id=”c”>D
-        <div id=”d”>E</div>
-        </div>
-       </div>
+    
+    <a href="#" id="size-12">Size 12</a> 
+<a href="#" id="size-16">Size 16</a> 
+<a href="#" id="size-18">Size 18</a>
+    <script>
+function makeSizer(size) {
+return function() {
+document.body.style.fontSize = size + "px";
+}; 
+}
+
+function makeSizerSimple(size){ //can use this version with .bind()
+document.body.style.fontSize = size + "px";
+}
+document.getElementById("size-12").onclick = makeSizer(12); 
+document.getElementById("size-16").onclick = makeSizer(16); 
+document.getElementById("size-18").onclick = makeSizerSimple.bind(null,18); //null ok if not using ‘this’
+    </script>
 </body>
 </html>

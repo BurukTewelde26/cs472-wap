@@ -5,12 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS472 MiniBankingApp</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script defer src="./js/minibankapp.js"></script>
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.2/cerulean/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EmRcsPP774S9MOi4ywB+JXUWjYnBdyInMzG2XsC5siZEUpexqxOMJW358dCYEjPu" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js" integrity="sha256-66f6uQTQkvHF8jpniLWJjnteEfmQaC/tATFew/nTBA8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/minibank.css">
+    <script defer src="../js/minibankapp.js"></script>
 </head>
 <body>
     <header>
@@ -68,15 +64,16 @@
                 </fieldset>
             </form>
             <table id="tblAccounts">
+                <caption>List of Customer Accounts</caption>
                 <thead>
                     <tr>
-                        <th >#</th>
-                        <th>Account No</th>
-                        <th>Customer Name</th>
-                        <th>Type of Account</th>
+                        <th scope="col">#</th>
+                        <th scope="col">Account No</th>
+                        <th scope="col">Customer Name</th>
+                        <th scope="col">Type of Account</th>
                     </tr>
-                  </thead>
-                  <tbody>
+                </thead>
+                <tbody>
                     <tr>
                         <td>1.</td>
                         <td>01-980-0001</td>
@@ -89,8 +86,7 @@
                         <td>Anna Hernandez-Diaz</td>
                         <td>Checking</td>
                     </tr>
-                  
-                  </tbody>
+                </tbody>
             </table>
         </main>
     </div>

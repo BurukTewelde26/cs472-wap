@@ -1,0 +1,18 @@
+#navbarSupportedContent{
+    background-color: blue;
+}
+.container{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+#box1,#box2{
+    padding:2em;
+    margin-right:2em;
+}
+.btn{
+    text-align: right;
+    background-color: blue;
+    padding: 1em;
+}

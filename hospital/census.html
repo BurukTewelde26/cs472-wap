@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.2/cerulean/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EmRcsPP774S9MOi4ywB+JXUWjYnBdyInMzG2XsC5siZEUpexqxOMJW358dCYEjPu" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../css/census.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"  id = "my-nav">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li><h5>The South West - Regional Census</h5></li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active"> <a class="nav-link" href="#">Census Form<span class="sr-only">(current)</span></a></li>
+           
+          </ul>
+  
+          <span class="navbar-text">
+            Monday 2, 2016
+          </span>
+        </div>
+      </nav>
+ <div class = "container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <h1>Census Form</h1>
+  </nav>
+    <hr>
+    <form>
+        <div class="form-row">
+             <div class="form-group col-md-12">
+               <label for="name">*Full Name</label>
+               <input type="text" class="form-control" id="name" placeholder="Enter Full Name">
+             </div>
+       </div>
+       <div class = "form-row">
+           <div class = "form-group col-md-6">
+            <label for="citizenId">*Citizen ID</label>
+            <input type="text" class="form-control" id="citizen" placeholder="XXXXXXX">
+           </div>
+
+           <div class = "form-group col-md-5">
+            <label for="ssn">*Social Security Number</label>
+            <input type="text" class="form-control" id="ssn" placeholder="XXXX-XXXX-XXX">
+           </div>
+       </div>
+
+       <div class = "form-row">
+          <div class = "form-group col-md-6">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Select...</option>
+              <option>...</option>
+            </select>
+           </div>
+
+        <div class="form-group">
+            <div class="form-check">
+                <label class="form-check-label" for="Senior">
+                    *Senior Citizen?
+                 </label> <br>
+                <input class="form-check-input" type="checkbox" name ="yes" id = "box1"> yes
+                <input class="form-check-input" type="checkbox" name="no" id ="box2"> No
+               
+            </div>
+        </div> 
+ 
+     </div>
+     <input type="reset" value="Reset" class= "btn">
+     <input type="submit" value="Submit" class = "btn">
+
+    </form>
+    <div class="container-table">
+        <h2>Hover Rows</h2>
+        <p>The .table-hover class enables a hover state on table rows:</p>            
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Mary</td>
+              <td>Moe</td>
+              <td>mary@example.com</td>
+            </tr>
+            <tr>
+              <td>July</td>
+              <td>Dooley</td>
+              <td>july@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+     
+</div><!--container-->
+<nav class="navbar fixed-bottom navbar-light bg-light">
+  <a class="navbar-brand" href="#">MUM</a>
+</nav>
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+Q1)
+   undefined
+   8
+   9
+   10
+   1
+
+Q2) 
+
+ Global Scope : all scripts and functions in a web page 
+ can access it.
+ Local scope :  is restriced to  local, for Example a variable 
+ declared inside a functionor block can only be accessed from with in it.
+
+Q3)
+
+a)No   b)Yes   c)No  d)Yes  e)Yes
+
+Q4)
+    81
+    25
+Q5)
+    10
+
+Q8)
+ 
+  In Question 6 the definition of add() , Counter is the free variable.
+  Free variable is a variable that is not locally defined and is not passed as parameter.
+
+Q9)
+
+  Using Module pattern we can clear all name of functions from  the global name space.This
+means we create a scope for the names. 
+
